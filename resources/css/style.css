@@ -1,0 +1,47 @@
+.gameboard {
+  text-align: center;
+  width: 600px;
+  height: 600px;
+}
+
+.gameboard .game-move-indicator {
+  font-size: 118px;
+}
+
+.position-center {
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
+  display:-webkit-box;
+}
+
+.gameboard .row {
+  height: 200px
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+.border-top {
+  border-top: 1px solid;
+}
+
+.border-right {
+  border-right: 1px solid;
+}
+
+.border-left {
+  border-left: 1px solid;
+}
+
+.min-width-200 {
+  min-width: 200px;
+}
+
+.textalign-center {
+  text-align: center;
+}
+
+#msg {
+  margin-left: -50px;
+}

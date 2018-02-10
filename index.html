@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- library styles -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/fontawesome/css/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Simple Website</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light">
+      <span class="navbar-brand mb-0 h1">TicTacToe</span>
+      <span class="navbar-brand mb-0 h1" id="msg"></span>
+      <span id="restart-game" class="navbar-brand mb-0 h1 pull-right"><i class="fas fa-sync"></i></span>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col position-center">
+          <div class="gameboard">
+            <div class="row border-bottom">
+                <div class="col border-right game-cell" data-index="0,0"><span class="game-move-indicator"></span></div>
+                <div class="col game-cell" data-index="0,1"><span class="game-move-indicator"></span></div>
+                <div class="col border-left game-cell" data-index="0,2"><span class="game-move-indicator"></span></div>
+            </div>
+            <div class="row">
+                <div class="col border-right game-cell" data-index="1,0"><span class="game-move-indicator"></span></div>
+                <div class="col game-cell" data-index="1,1"><span class="game-move-indicator"></span></div>
+                <div class="col border-left game-cell" data-index="1,2"><span class="game-move-indicator"></span></div>
+            </div>
+            <div class="row border-top">
+                <div class="col border-right game-cell" data-index="2,0"><span class="game-move-indicator"></span></div>
+                <div class="col game-cell" data-index="2,1"><span class="game-move-indicator"></span></div>
+                <div class="col border-left game-cell" data-index="2,2"><span class="game-move-indicator"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="players-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome</h5>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Player1 name and Symbol</span>
+              </div>
+              <input id="player1" type="text" class="form-control min-width-200">
+              <input id="player1-symbol" type="text" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Player2 name and symbol</span>
+              </div>
+              <input id="player2" type="text" class="form-control min-width-200">
+              <input id="player2-symbol" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="start-game" type="button" class="btn btn-primary">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- library scripts -->
+    <script type="text/javascript" src="libraries/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="libraries/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="libraries/popper/popper.min.js"></script>
+    <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/js/app.js"></script>
+  </body>
+</html>
